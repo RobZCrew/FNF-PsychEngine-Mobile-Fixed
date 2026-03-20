@@ -153,7 +153,22 @@
 	</section>
 	
 	<!-- Do whatever you want I'm tired uninstall and install everytime -->
-	<certificate path="key.keystore" password="psychengine" alias="psychport" alias-password="psychengine" if="android" unless="debug" />
+	<!-- Now android 11 and newer versions block "Access to all archives" if is not defined like a permission here -->
+	<section if="android">
+	  <config:android permission="android.permission.MANAGE_MEDIA"/> 
+	  <config:android permission="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+	  <config:android permission="android.permission.WRITE_EXTERNAL_STORAGE" />
+	  <config:android permission="android.permission.READ_EXTERNAL_STORAGE" />
+	  <config:android permission="android.permission.READ_MEDIA_IMAGES"/>
+	  <config:android permission="android.permission.READ_MEDIA_AUDIO"/>
+      <config:android permission="android.permission.READ_MEDIA_VIDEO"/>
+	  <config:android permission="android.permission.VIBRATE" />
+	  <config:android permission="android.permission.INTERNET" />
+	  <config:android permission="android.permission.ACCESS_WIFI_STATE"/>
+	  <config:android permission="android.permission.ACCESS_NETWORK_STATE" />
+	  <config:android permission="android.permission.CAPTURE_AUDIO_OUTPUT" />
+      <certificate path="key.keystore" password="funkinxiaro" alias="xiaroport" alias-password="funkinxiaro" unless="debug" />
+	</section>
 
 	<!-- Category Type for Apple Systems -->
 	<config:ios category_type="public.app-category.music-games" />
