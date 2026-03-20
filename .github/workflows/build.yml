@@ -57,6 +57,7 @@ jobs:
         run: |
           haxelib set hxcpp 4.2.1
           export HXCPP_CLANG=1
+          export HXCPP_IGNORE_HXCPP_VERSION=1
           haxelib run lime build ${{ inputs.buildArgs }}
 
       - name: Make IPA
