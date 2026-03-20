@@ -84,7 +84,6 @@ class FPSCounter extends TextField
 		text = 
 		'FPS: $currentFPS' + 
 		'\nMemory: ${flixel.util.FlxStringUtil.formatBytes(memoryMegas)}' +
-		'\nFunkin Xiaro v1.0' +
 		os;
 
 		textColor = 0xFFFFFFFF;
