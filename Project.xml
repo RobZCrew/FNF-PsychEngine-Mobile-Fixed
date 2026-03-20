@@ -155,6 +155,11 @@
 	<!-- Do whatever you want I'm tired uninstall and install everytime -->
 	<!-- Now android 11 and newer versions block "Access to all archives" if is not defined like a permission here -->
 	<section if="android">
+	  <config:android targetSdkVersion="33" minSdkVersion="21" />
+	  <config:android>
+		  <application android:requestLegacyExternalStorage="true" />
+      </config:android>
+
 	  <config:android permission="android.permission.MANAGE_MEDIA"/> 
 	  <config:android permission="android.permission.MANAGE_EXTERNAL_STORAGE"/>
 	  <config:android permission="android.permission.WRITE_EXTERNAL_STORAGE" />
