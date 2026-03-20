@@ -12,10 +12,8 @@
     },
     {
       "name": "flixel",
-      "type": "git",
-      "dir": null,
-      "ref": "5.5.0",
-      "url": "https://github.com/MobilePorting/flixel"
+      "type": "haxelib",
+      "ref": "5.5.0"
     },
     {
       "name": "flixel-addons",
@@ -34,10 +32,8 @@
     },
     {
       "name": "hxcpp",
-      "type": "git",
-      "dir": null,
-      "ref": "master",
-      "url": "https://github.com/mcagabe19-stuff/hxcpp"
+      "type": "haxelib",
+      "version": "4.3.2"
     },
     {
       "name": "hxCodec",
@@ -48,10 +44,8 @@
     },
     {
       "name": "SScript",
-      "type": "git",
-      "dir": null,
-      "ref": "main",
-      "url": "https://github.com/mcagabe19-stuff/SScript-7.7.0"
+      "type": "haxelib",
+      "version": "7.7.0"
     },
     {
       "name": "tjson",
@@ -70,7 +64,7 @@
       "type": "git",
       "dir": null,
       "ref": "master",
-      "url": "https://github.com/MobilePorting/linc_luajit-0.7plus"
+      "url": "https://github.com/superpowers04/linc_luajit"
     },
     {
       "name": "flxanimate",
