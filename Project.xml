@@ -28,7 +28,7 @@
 	<define name="COPYSTATE_ALLOWED" if="MODS_ALLOWED mobile"/>
 	<define name="PSYCH_WATERMARKS"/> <!-- DELETE THIS TO REMOVE WATERMARKS/DEV NAMES ON TITLE SCREEN -->
 	<define name="VIDEOS_ALLOWED" if="desktop || mobile" unless="32bits || hl || NOVIDEO || rpi"/> <!-- i'll keep this cuz it makes vscode think i don't use videos -->
-
+    <define name="USE_LIME_ANDROIDTOOLS" if="android"/>
 	<section if="officialBuild">
 		<define name="TITLE_SCREEN_EASTER_EGG"/>
 	</section>
@@ -155,7 +155,7 @@
 	<!-- Do whatever you want I'm tired uninstall and install everytime -->
 	<!-- Now android 11 and newer versions block "Access to all archives" if is not defined like a permission here -->
 	<section if="android">
-	  <config:android targetSdkVersion="33" minSdkVersion="21" />
+	  <config:android targetSdkVersion="29" minSdkVersion="21" />
 	  <config:android>
 		  <application android:requestLegacyExternalStorage="true" />
       </config:android>
